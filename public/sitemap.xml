@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://stthomasschoolnpj.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/about</loc><priority>0.9</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/about/mission</loc><priority>0.8</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/about/principal-message</loc><priority>0.8</priority></url>
+
+  <url><loc>https://stthomasschoolnpj.com/academics</loc><priority>0.9</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/academics/pre-school</loc><priority>0.8</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/academics/primary</loc><priority>0.8</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/academics/middle</loc><priority>0.8</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/academics/high</loc><priority>0.8</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/academics/plus-two</loc><priority>0.9</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/academics/courses/science</loc><priority>0.9</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/academics/courses/management</loc><priority>0.9</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/academics/courses/computer-science</loc><priority>0.9</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/academics/courses/hotel-management</loc><priority>0.9</priority></url>
+
+  <url><loc>https://stthomasschoolnpj.com/facilities</loc><priority>0.8</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/facilities/library</loc><priority>0.7</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/facilities/labs</loc><priority>0.7</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/facilities/sports</loc><priority>0.7</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/facilities/transportation</loc><priority>0.7</priority></url>
+
+  <url><loc>https://stthomasschoolnpj.com/apply</loc><priority>0.9</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/admissions</loc><priority>0.9</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/gallery</loc><priority>0.7</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/contact</loc><priority>1.0</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/notices</loc><priority>0.7</priority></url>
+  <url><loc>https://stthomasschoolnpj.com/blog</loc><priority>0.8</priority></url>
+</urlset>
