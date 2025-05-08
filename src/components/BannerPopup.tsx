@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { X } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
@@ -28,14 +27,12 @@ const BannerPopup = () => {
           .single();
 
         if (error && error.code !== "PGRST116") {
-          // PGRST116 is 'no rows returned' error, which is fine
           console.error("Error fetching banner:", error);
         }
 
-        // Check if we have a banner to show
         if (data) {
           setBannerImage(data);
-          setIsOpen(true); // Always show the banner when page loads
+          setIsOpen(true);
         }
       } catch (error) {
         console.error("Error in banner fetch:", error);
@@ -54,25 +51,25 @@ const BannerPopup = () => {
   if (isLoading || !bannerImage || !isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
-      <div className="relative max-w-4xl w-11/12 bg-white rounded-lg shadow-xl overflow-hidden">
-        <Button 
-          variant="ghost" 
-          size="icon" 
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 p-4">
+      <div className="relative w-full max-w-3xl max-h-[90vh] bg-white rounded-lg shadow-xl overflow-auto">
+        <Button
+          variant="ghost"
+          size="icon"
           onClick={closeBanner}
           className="absolute top-2 right-2 bg-white bg-opacity-70 rounded-full z-10"
         >
           <X className="h-4 w-4" />
           <span className="sr-only">Close</span>
         </Button>
-        
+
         <div className="relative">
-          <img 
-            src={bannerImage.image_url} 
-            alt={bannerImage.title || "School Banner"} 
-            className="w-full h-auto"
+          <img
+            src={bannerImage.image_url}
+            alt={bannerImage.title || "School Banner"}
+            className="w-full h-auto object-contain"
           />
-          
+
           {(bannerImage.title || bannerImage.subtitle) && (
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
               {bannerImage.title && (
