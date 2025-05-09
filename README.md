@@ -111,22 +111,10 @@ Accessibility – Semantic tags and readable contrast
 Consistent Branding – Uses the school’s theme across all pages
 
 
-Open in your browser: =
+Open in your browser: = https://stthomasschoolnpj.com/ 
 
 
-🛡️ Security & Privacy
 
-This is a static website with no backend or login features. All data is publicly available and safe for open hosting.
-
-📌 Future Enhancements
-
-Contact form with validation & backend support
-
-CMS integration for easy content updates
-
-Dark mode
-
-Multilingual support
 
 👥 Credits
 
