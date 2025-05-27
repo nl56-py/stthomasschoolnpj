@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Target, Heart, Brain, Globe } from "lucide-react";
 
 const Mission = () => {
@@ -32,6 +33,9 @@ const Mission = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/about/mission" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">

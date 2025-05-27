@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "@/components/Header";
+import { Helmet } from "react-helmet";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -80,6 +81,9 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen font-sans">
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/contact" />
+      </Helmet>
       <Header />
 
       {/* Page Banner */}

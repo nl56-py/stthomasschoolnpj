@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -59,6 +60,9 @@ const PlusTwo = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/academics/plus-two" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-20 bg-gradient-to-b from-purple-50 to-white">

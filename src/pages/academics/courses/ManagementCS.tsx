@@ -1,6 +1,7 @@
 
 import React from "react";
 import Header from "@/components/Header";
+import { Helmet } from "react-helmet";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -48,6 +49,9 @@ const ManagementCS = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/academics/courses/science" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-20 bg-gradient-to-b from-purple-50 to-white">

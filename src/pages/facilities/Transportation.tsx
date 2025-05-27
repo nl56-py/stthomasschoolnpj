@@ -1,6 +1,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import { Bus, MapPin, Clock, Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -27,6 +28,9 @@ const Transportation = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+                    <link rel="canonical" href="https://stthomasschoolnpj.com/facilities/transportation" />
+            </Helmet>
       <Header />
 
       <section className="pt-32 pb-20 bg-gradient-to-b from-school-primary/10 to-white">
@@ -139,7 +143,7 @@ const Transportation = () => {
               <div className="flex justify-center items-center space-x-6">
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-school-primary mr-2" />
-                  <span className="text-gray-600">081-534463</span>
+                  <span className="text-gray-600">081-521423</span>
                 </div>
                 <Button className="bg-school-primary hover:bg-school-primary/90">
                   Contact Us

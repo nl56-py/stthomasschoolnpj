@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Microscope, Atom, BookOpen, Calculator, Lightbulb, Beaker } from "lucide-react";
@@ -48,6 +49,9 @@ const Science = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/academics/courses/science" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
