@@ -1,6 +1,7 @@
 
 import React from "react";
 import Header from "@/components/Header";
+import { Helmet } from "react-helmet";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -44,6 +45,9 @@ const Facilities = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/facilities" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-20 bg-gradient-to-b from-school-primary/10 to-white">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -157,6 +158,9 @@ const Apply = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/apply" />
+      </Helmet>
       <Header />
       
       <section className="pt-32 pb-20 bg-gradient-to-b from-school-primary/10 to-white">
@@ -436,7 +440,7 @@ const Apply = () => {
               <p className="text-gray-600 mb-4">
                 For any queries regarding the admission process, please contact us:
               </p>
-              <p className="font-medium">081-534463| schoolstthoms@gmail.com</p>
+              <p className="font-medium">081-521423 | schoolstthoms@gmail.com</p>
             </div>
           </div>
         </div>

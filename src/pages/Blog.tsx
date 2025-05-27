@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "@/components/Header";
+import { Helmet } from "react-helmet";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import {
@@ -126,6 +127,9 @@ const blogPosts = [
 const Blog = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/blog" />
+      </Helmet>
       <Header />
 
       <section className="pt-32 pb-20 bg-gradient-to-b from-school-primary/10 to-white">

@@ -1,6 +1,7 @@
 
 import React from "react";
 import Header from "@/components/Header";
+import { Helmet } from "react-helmet";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -60,6 +61,9 @@ const facilities = [
 const Labs = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/facilities/labs" />
+      </Helmet>
       <Header />
       <section className="pt-32 pb-20 bg-gradient-to-b from-green-50 to-white">
         <div className="container mx-auto px-4">

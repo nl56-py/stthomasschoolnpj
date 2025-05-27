@@ -4,6 +4,7 @@ import { format } from "date-fns";
 import { Download, Clock, Search } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet"; 
 import { supabase } from "@/integrations/supabase/client";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -53,6 +54,9 @@ const Notices = () => {
 
   return (
     <div className="min-h-screen">
+     <Helmet>
+                <link rel="canonical" href="https://stthomasschoolnpj.com/notices" />
+        </Helmet>
       <Header />
       <main className="pt-32 pb-20 bg-gradient-to-b from-gray-100 to-white">
         <div className="container mx-auto px-4">

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import { BookOpen, Brain, Users, Sparkles, Medal, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -79,6 +80,9 @@ const PrimarySchool = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/academics/primary" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}
