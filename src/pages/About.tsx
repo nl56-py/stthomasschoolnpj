@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet"; // Import react-helmet for managing head tags
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -9,6 +10,11 @@ import { ArrowRight } from "lucide-react";
 const About = () => {
   return (
     <div className="min-h-screen">
+      {/* Add canonical tag using Helmet */}
+      <Helmet>
+        <link rel="canonical" href="https://stthomasschoolnpj.com/about" />
+      </Helmet>
+
       <Header />
 
       <section className="pt-32 pb-20 bg-gradient-to-b from-school-primary/10 to-white">
@@ -36,7 +42,7 @@ const About = () => {
               className="relative h-[400px] rounded-xl overflow-hidden shadow-xl"
             >
               <img
-                src="/lovable-uploads/919f8a27-51c6-40ec-a2bf-174699194643.png"
+                src="/lovable-Uploads/919f8a27-51c6-40ec-a2bf-174699194643.png"
                 alt="St. Thomas School Building"
                 className="w-full h-full object-cover"
               />
