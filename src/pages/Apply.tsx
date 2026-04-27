@@ -6,6 +6,7 @@ import * as z from "zod";
 import { motion } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import { getSupabaseFunctionUrl } from "@/integrations/supabase/functions";
 import { useNavigate } from "react-router-dom";
 
 import Header from "@/components/Header";
@@ -113,7 +114,7 @@ const Apply = () => {
 
       try {
         const res = await fetch(
-          "https://yumsqjykylhspozmfoza.functions.supabase.co/send-contact-mailjet",
+          getSupabaseFunctionUrl("send-contact-mailjet"),
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },

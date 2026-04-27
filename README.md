@@ -51,6 +51,15 @@ React Router
 Client-side routing and navigation
 
 
+Supabase Setup
+
+This project uses Supabase for data storage and an Edge Function for sending contact emails.
+
+1) Copy `.env.example` to `.env.local`
+2) Set:
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
+
 
 🌐 Pages & Features
 

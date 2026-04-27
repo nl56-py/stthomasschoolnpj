@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import { getSupabaseFunctionUrl } from "@/integrations/supabase/functions";
 import { toast } from "@/components/ui/use-toast";
 
 const Contact = () => {
@@ -44,7 +45,7 @@ const Contact = () => {
 
       // Then, send the email via Mailjet edge function with full URL
       const res = await fetch(
-        "https://yumsqjykylhspozmfoza.functions.supabase.co/send-contact-mailjet",
+        getSupabaseFunctionUrl("send-contact-mailjet"),
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
